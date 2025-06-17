@@ -1,0 +1,71 @@
+
+/* TraineeDashboardCSS */
+.external-links {
+    background-color: #f2f9ff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+    .external-links h2 {
+        margin-bottom: 15px;
+        color: #2c3e50;
+    }
+
+    .external-links ol {
+        padding-left: 20px;
+    }
+
+    .external-links li {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+    .external-links a {
+        color: #2980b9;
+        text-decoration: none;
+    }
+
+        .external-links a:hover {
+            text-decoration: underline;
+        }
+
+/* Media Queris*/
+/* Phone */
+@media (max-width: 600px) {
+    .external-links {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .external-links h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .external-links ol {
+        padding-left: 15px;
+    }
+
+    .external-links li {
+        font-size: 1em;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    .external-links {
+        padding: 25px;
+        margin: 25px auto;
+    }
+
+    .external-links h2 {
+        font-size: 1.6em;
+    }
+
+    .external-links li {
+        font-size: 1.05em;
+    }
+}

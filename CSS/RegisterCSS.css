@@ -1,0 +1,121 @@
+
+/* RegisterCSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: block;
+}
+
+/* Error message styling */
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-bottom: 15px;
+    display: none; /* hidden by default, show with JS if needed */
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+    .register-container form {
+        background-color: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .register-container input,
+    .register-container select,
+    .register-container textarea,
+    .register-container button {
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+
+        .register-container button{
+            background-color: #1f6391;
+        }
+.small-note {
+    font-size: 0.9em;
+    color:cadetblue;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+#favColor, #profilePic {
+    display: block;
+    margin: 0 auto;
+}
+main form label {
+    font-weight:550;
+}
+main form fieldset label {
+    font-weight: 500;
+}
+
+/* Media Queris*/
+/* Phone */
+@media (max-width: 600px) {
+    .register-container {
+        padding: 20px;
+    }
+
+    .register-container form {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .register-container input,
+    .register-container select,
+    .register-container textarea,
+    .register-container button {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+
+    .small-note {
+        font-size: 0.8em;
+    }
+
+    main form label,
+    main form fieldset label {
+        font-size: 0.9em;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    .register-container {
+        padding: 30px;
+    }
+
+    .register-container form {
+        padding: 25px 30px;
+        gap: 12px;
+    }
+
+    .register-container input,
+    .register-container select,
+    .register-container textarea,
+    .register-container button {
+        font-size: 1em;
+        padding: 9px;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/RegisterCSS.css"/>
+    <link rel="stylesheet" href="../CSS/LoginCSS.css" />
+    <link rel="stylesheet" href="../FitManage_CSS.css" />
+</head>
+<body>
+    <header>
+        <div class="header-background3"></div>
+        <h2 class="main-title">Registration</h2>
+        <img src="../images/FitManageLogo.jpg" alt="Site Logo">
+    </header>
+
+    <nav>
+        <a href="../index.html">Home Page</a>
+        <a href="../PHP/classSchedule.php">Class Schedule</a>  
+        <a href="../PHP/TraineeDashboard.php">Trainee Dashboard</a>
+        <a href="../PHP/AddClass.php">Trainer Dashboard</a>
+        <a href="../PHP/adminPanel.php">Admin Panel</a>        
+        <a href="AboutUs.html">About Us</a>
+    </nav>
+
+    <main class="register-container">
+        <form method="POST" action="../PHP/register.php" enctype="multipart/form-data">
+            <h2>Please Fill Your Details</h2>
+
+            <input type="text" name="username" placeholder="Username" required />
+            <input type="text" name="fullName" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <input type="url" name="website" placeholder="Personal Website (optional)" />
+            <input type="tel" name="phone" placeholder="Phone Number" />
+            <input type="number" name="age" placeholder="Age" min="0" max="120" required />
+
+            <fieldset>
+                <label><input type="radio" name="gender" value="male" required /> Male</label>
+                <label><input type="radio" name="gender" value="female" /> Female</label>
+                <label><input type="radio" name="gender" value="other" /> Other</label>
+            </fieldset>
+
+            <label for="role">Select Your Role:</label>
+            <select name="role" required>
+                <option value="">-- Choose --</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Trainer">Trainer</option>
+            </select>
+
+            <label>Fitness Level:</label>
+            <input type="range" name="fitnessLevel" min="1" max="10" />
+
+            <label>Favorite Color:</label>
+            <input type="color" name="favColor" />
+
+            <label>Birth Date:</label>
+            <input type="date" name="birthDate" />
+
+            <label>Preferred Training Time:</label>
+            <input type="time" name="preferredTime" min="08:00" max="21:00" />
+
+            <label>Country:</label>
+            <input list="countries" name="country" />
+            <datalist id="countries">
+                <option value="Israel">
+                <option value="USA">
+                <option value="Germany">
+                <option value="France">
+                <option value="Japan">
+            </datalist>
+
+            <label>Upload Profile Picture:</label>
+            <input type="file" name="profilePic" accept="image/*" />
+
+            <textarea name="bio" placeholder="Tell us about yourself..." rows="4" cols="40"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+</html>
