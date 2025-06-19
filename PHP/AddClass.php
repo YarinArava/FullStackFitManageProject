@@ -2,7 +2,7 @@
 include("../db.php");
 
 // Fetch trainers from the users table
-$result = mysqli_query($conn, "SELECT username FROM users WHERE role = 'trainer' AND status = 'Active'");
+$result = mysqli_query($conn, "SELECT username FROM users WHERE role = 'Trainer' AND status = 'Active'");
 $instructors = [];
 while ($row = mysqli_fetch_assoc($result)) {
     $instructors[] = $row['username'];
